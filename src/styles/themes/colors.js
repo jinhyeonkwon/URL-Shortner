@@ -1,6 +1,7 @@
 const colors = {
   WHITE: '#ffffff',
   BLACK: '#000000',
+  RED: 'hsl(0 50 47)',
   PRIMARY: {
     7: 'hsl(193 50 7)',
     17: 'hsl(193 50 17)',

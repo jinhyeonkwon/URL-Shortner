@@ -1,27 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
 import theme from './styles/themes.d';
 import { ThemeProvider } from 'styled-components';
 
+import { Header } from './components/Header';
+import { GlobalFrameWrapper } from './components/GlobalFrame';
+import BodyFrameWrapper from './components/BodyFrame';
+import { InputSection } from './components/InputSection';
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <GlobalFrameWrapper>
+          <Header />
+          <BodyFrameWrapper>
+            <InputSection title={'Enter the Original URL!'} />
+            
+          </BodyFrameWrapper>
+        </GlobalFrameWrapper>
       </div>
     </ThemeProvider>
   );

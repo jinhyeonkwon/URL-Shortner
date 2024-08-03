@@ -1,6 +1,6 @@
 const fonts = {
   FAMILY: {
-    NOTO_SANS: 'Noto Sans KR',
+    NOTO_SANS: 'Noto Sans',
   },
   WEIGHT: {
     BOLD: 700,
