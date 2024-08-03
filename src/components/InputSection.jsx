@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { useState, useRef } from 'react';
-import qs from 'qs';
 
 import Typography from './Typography';
 import { Button } from './Button';
@@ -100,7 +99,7 @@ export const InputSection = ({ title }) => {
             </Typography>
           )}
         </InputAndError>
-        <Button type="submit">Shorten</Button>
+        <Button type="submit">{!shortURL ? 'Shorten' : shortURL}</Button>
       </InputForm>
     </InputSectionWrapper>
   );
